@@ -41,7 +41,7 @@ Since training large Vision-Language models requires significant computational p
    * Click on **"Add Input"** on the right panel.
    * Search for the dataset: `cbis-ddsm-breast-cancer-image-dataset` (by awsaf49) and add it to your environment.
 3. **Import the Notebook:**
-   * Upload our file `presentation(1).ipynb` into your Kaggle session.
+   * Upload our file `clipseg-vgg19-deep-unet-cbam.ipynb` into your Kaggle session.
 4. **Configure & Run:**
    * Make sure the path variables in the first cells match your Kaggle input directory (e.g., `/kaggle/input/...`).
    * Run the cells sequentially from top to bottom. The script will automatically build the `master_dataset.csv`, extract the ClinicalBERT embeddings, and train/validate the hybrid models.
