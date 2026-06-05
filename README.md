@@ -48,13 +48,5 @@ Since training large Vision-Language models requires significant computational p
 
 ---
 
-## Local Gradio Demo (Radiology Assistant UI)
-We developed a local web interface using **Gradio** to allow radiologists to load validation patients, choose any variant (Keras or PyTorch), and visualize the segmentation mask overlaid on the raw scan in real-time.
-
-To launch the local demo, run:
-```bash
-pip install gradio tensorflow torch torchvision opencv-python transformers
-python main_gradio.py
-```
 ### Citation & Contact
 Developed by Hani KATTI under the supervision of Mme. Faiza DJIDEL & Mme. Lamia BERKANI (Faculty of Computer Science, USTHB, Algiers).
