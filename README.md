@@ -1,13 +1,13 @@
 # Multimodal Medical Image Segmentation using Vision-Language Models (VLM)
 
-This repository contains the official implementation of our custom hybrid architecture developed for **automatic breast lesion segmentation** on the **CBIS-DDSM** (Mammography) dataset. 
+This repository contains the official implementation of the custom hybrid architecture developed for **automatic breast lesion segmentation** on the **CBIS-DDSM** (Mammography) dataset. 
 
 This project was developed as part of our Computer Science Bachelor's Thesis (PFE) at **USTHB (2026)**.
 
 ---
 
 ## Architecture Overview
-Our final state-of-the-art (SOTA) model, **`VGG19_CLIP_Hybrid_SOTA`**, bridges the gap between raw pixel data and clinical reports by combining a pre-trained semantic expert with a deep convolutional refiner.
+The final state-of-the-art (SOTA) model, **`VGG19_CLIP_Hybrid_SOTA`**, bridges the gap between raw pixel data and clinical reports by combining a pre-trained semantic expert with a deep convolutional refiner.
 
 ### How it works:
 1. **Semantic Expert (CLIPSeg):** A frozen Vision-Language Model (VLM) reads the clinical prompt (e.g., *"a malignant mass with spiculated margins"*) and generates a high-level **Semantic Heatmap** of the lesion.
@@ -18,7 +18,6 @@ Our final state-of-the-art (SOTA) model, **`VGG19_CLIP_Hybrid_SOTA`**, bridges t
 ---
 
 ## Architecture Schematic
-Place your custom architecture diagram (`architecture_diagram.png`) inside a folder named `figures/` in this repository, and it will render automatically below:
 
 ![CLIPSeg + Deep UNet SOTA Architecture](figures/architecture_diagram.png)
 
