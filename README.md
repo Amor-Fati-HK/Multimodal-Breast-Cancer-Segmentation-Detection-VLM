@@ -55,3 +55,6 @@ To launch the local demo, run:
 ```bash
 pip install gradio tensorflow torch torchvision opencv-python transformers
 python main_gradio.py
+```
+### Citation & Contact
+Developed by Hani KATTI under the supervision of Mme. Faiza DJIDEL & Mme. Lamia BERKANI (Faculty of Computer Science, USTHB, Algiers).
