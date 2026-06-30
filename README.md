@@ -1,13 +1,13 @@
 # Multimodal Medical Image Segmentation using Vision-Language Models (VLM)
 
-This repository contains the official implementation of our custom hybrid architecture developed for **automatic breast lesion segmentation** on the **CBIS-DDSM** (Mammography) dataset. 
+This repository contains the official implementation of the custom hybrid architecture developed for **automatic breast lesion segmentation** on the **CBIS-DDSM** (Mammography) dataset. 
 
 This project was developed as part of our Computer Science Bachelor's Thesis (PFE) at **USTHB (2026)**.
 
 ---
 
 ## Architecture Overview
-Our final state-of-the-art (SOTA) model, **`VGG19_CLIP_Hybrid_SOTA`**, bridges the gap between raw pixel data and clinical reports by combining a pre-trained semantic expert with a deep convolutional refiner.
+The final state-of-the-art (SOTA) model, **`VGG19_CLIP_Hybrid_SOTA`**, bridges the gap between raw pixel data and clinical reports by combining a pre-trained semantic expert with a deep convolutional refiner.
 
 ### How it works:
 1. **Semantic Expert (CLIPSeg):** A frozen Vision-Language Model (VLM) reads the clinical prompt (e.g., *"a malignant mass with spiculated margins"*) and generates a high-level **Semantic Heatmap** of the lesion.
@@ -18,7 +18,6 @@ Our final state-of-the-art (SOTA) model, **`VGG19_CLIP_Hybrid_SOTA`**, bridges t
 ---
 
 ## Architecture Schematic
-Place your custom architecture diagram (`architecture_diagram.png`) inside a folder named `figures/` in this repository, and it will render automatically below:
 
 ![CLIPSeg + Deep UNet SOTA Architecture](figures/architecture_diagram.png)
 
@@ -42,17 +41,12 @@ Since training large Vision-Language models requires significant computational p
    * Click on **"Add Input"** on the right panel.
    * Search for the dataset: `cbis-ddsm-breast-cancer-image-dataset` (by awsaf49) and add it to your environment.
 3. **Import the Notebook:**
-   * Upload our file `presentation(1).ipynb` into your Kaggle session.
+   * Upload our file `clipseg-vgg19-deep-unet-cbam.ipynb` into your Kaggle session.
 4. **Configure & Run:**
    * Make sure the path variables in the first cells match your Kaggle input directory (e.g., `/kaggle/input/...`).
    * Run the cells sequentially from top to bottom. The script will automatically build the `master_dataset.csv`, extract the ClinicalBERT embeddings, and train/validate the hybrid models.
 
 ---
 
-## Local Gradio Demo (Radiology Assistant UI)
-We developed a local web interface using **Gradio** to allow radiologists to load validation patients, choose any variant (Keras or PyTorch), and visualize the segmentation mask overlaid on the raw scan in real-time.
-
-To launch the local demo, run:
-```bash
-pip install gradio tensorflow torch torchvision opencv-python transformers
-python main_gradio.py
+### Citation & Contact
+Developed by Hani KATTI under the supervision of Mme. Faiza DJIDEL & Mme. Lamia BERKANI (Faculty of Computer Science, USTHB, Algiers).
